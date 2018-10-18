@@ -6,6 +6,7 @@ var takeANumber = function(){
     return `Your number is ${line[line.length-1]}`;
   }
 }()
+var bop = 'boop';
 
 function nowServing(line){
   if (line.length > 0){
@@ -15,7 +16,6 @@ function nowServing(line){
     return "There is nobody waiting to be served!";
   }
 }
-
 function currentLine(line){
   var message  = "The line is currently: "
   for (let i=0; i<line.length; i++){
