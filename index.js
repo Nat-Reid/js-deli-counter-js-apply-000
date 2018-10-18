@@ -1,12 +1,11 @@
-function takeANumber(line){
-  if (line.length >0){  
-    line.push(line[line.length - 1] + 1);
+var takeANumber = function(){
+  var lastNum = 0;
+  return function takeANumber(line){
+    lastNum++;
+    line.push(lastNum);
+    return `Your number is ${line[line.length-1]}`;
   }
-  else {
-    line.push(1);
-  }
-  return `Your number is ${line[line.length-1]}`;
-}
+}()
 
 function nowServing(line){
   if (line.length > 0){
