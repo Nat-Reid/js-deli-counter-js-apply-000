@@ -6,7 +6,6 @@ var takeANumber = function(){
     return `Your number is ${line[line.length-1]}`;
   }
 }()
-var bop = 'boop';
 
 function nowServing(line){
   if (line.length > 0){
