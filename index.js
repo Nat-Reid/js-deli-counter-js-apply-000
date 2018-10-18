@@ -1,6 +1,6 @@
 var takeANumber = function(){
   var lastNum = 0;
-  return function takeANumber(line){
+  return function placeHolder(line){
     lastNum++;
     line.push(lastNum);
     return `Your number is ${line[line.length-1]}`;
