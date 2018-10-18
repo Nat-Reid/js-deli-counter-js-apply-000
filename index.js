@@ -1,6 +1,11 @@
-function takeANumber(line, customer){
-  line.push(customer);
-  return `Welcome, ${customer}. You are number ${line.length} in line.`;
+function takeANumber(line){
+  if (line.length >0){  
+    line.push(line[line.length - 1] + 1);
+  }
+  else {
+    line.push(1);
+  }
+  return `Your number is ${line[line.length-1]}`;
 }
 
 function nowServing(line){
